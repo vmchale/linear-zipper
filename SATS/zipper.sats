@@ -14,7 +14,7 @@ fn go_left {a:vt@ype} (loc(a)) : loc(a)
 
 fn go_right {a:vt@ype} (loc(a)) : loc(a)
 
-fn go_up {a:vt@ype} (loc(a)) : loc(a)
+fn {a:vt@ype} go_up (loc(a)) : loc(a)
 
 fn go_down {a:vt@ype} (loc(a)) : loc(a)
 

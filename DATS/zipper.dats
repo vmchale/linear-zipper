@@ -18,12 +18,12 @@ implement go_right (z) =
       | ~node (left, up, ~list0_vt_cons (r, right)) => (r, node(list0_vt_cons(t, left), up, right))
   end
 
-implement go_up (z) =
+implement {a} go_up (z) =
   let
     val (t, p) = z
   in
     case- p of
-      | ~node (left, up, right) => (section(list0_vt_append( list0_vt_reverse(left)
-                                                           , list0_vt_cons(t, right)
-                                                           )), up)
+      | ~node (left, up, right) => (section(list0_vt_append<tree(a)>( list0_vt_reverse<tree(a)>(left)
+                                                                    , list0_vt_cons(t, right)
+                                                                    )), up)
   end
