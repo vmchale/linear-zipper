@@ -4,4 +4,4 @@ staload "SATS/zipper.sats"
 
 // TODO: print tree and all that stuff
 implement main0 () =
-  println!("Hello, World!")
+  ()
