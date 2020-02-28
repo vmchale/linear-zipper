@@ -27,3 +27,11 @@ implement {a} go_up (z) =
                                                                     , list0_vt_cons(t, right)
                                                                     )), up)
   end
+
+implement go_down (z) =
+  let
+    val (t, p) = z
+  in
+    case- t of
+      | ~section (~list0_vt_cons (t1, trees)) => (t1, node(list0_vt_nil, p, trees))
+  end
