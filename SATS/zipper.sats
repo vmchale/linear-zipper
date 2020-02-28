@@ -18,11 +18,7 @@ fn {a:vt@ype} go_up (loc(a)) : loc(a)
 
 fn go_down {a:vt@ype} (loc(a)) : loc(a)
 
-fn {a:vt@ype+} tree_free (tree(a)) : void
-
-overload free with tree_free
-
-fn {a:vt@ype} change (loc(a), tree(a)) : loc(a)
+fn change {a:vt@ype} (tree(a) -> void, loc(a), tree(a)) : loc(a)
 
 fn insert_right {a:vt@ype} (loc(a), tree(a)) : loc(a)
 
@@ -30,4 +26,4 @@ fn insert_left {a:vt@ype} (loc(a), tree(a)) : loc(a)
 
 fn insert_down {a:vt@ype} (loc(a), tree(a)) : loc(a)
 
-fn {a:vt@ype} delete (loc(a)) : loc(a)
+fn delete {a:vt@ype} (tree(a) -> void, loc(a)) : loc(a)
