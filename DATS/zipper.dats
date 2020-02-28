@@ -35,3 +35,11 @@ implement go_down (z) =
     case- t of
       | ~section (~list0_vt_cons (t1, trees)) => (t1, node(list0_vt_nil, p, trees))
   end
+
+implement {a} change (z, t) =
+  let
+    val (t1, p) = z
+    val () = tree_free<a>(t1)
+  in
+    (t, p)
+  end
