@@ -1,0 +1,2 @@
+- [ ] scars?
+- [ ] print out the example; run it on the syntax tree
