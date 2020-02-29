@@ -1,3 +1,4 @@
+staload "SATS/binary-tree-zipper.sats"
 staload "SATS/zipper.sats"
 
 #include "DATS/zipper.dats"
